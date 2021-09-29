@@ -33,7 +33,10 @@
       roll="${calibration['rear_unit_base_link']['camera3']['roll']}"
       pitch="${calibration['rear_unit_base_link']['camera3']['pitch']}"
       yaw="${calibration['rear_unit_base_link']['camera3']['yaw']}"
-      fps="30" width="800" height="400" fov="1.3"
+      fps="30"
+      width="800"
+      height="400"
+      fov="1.3"
     />
 
     <!-- lidar -->
