@@ -1,4 +1,4 @@
-top_unit_base_link2:
+top_unit_base_link:
   traffic_light_camera:
     x: 0.003
     y: 0.063
