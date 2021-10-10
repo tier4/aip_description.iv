@@ -69,14 +69,14 @@ top_unit_base_link:
     roll: 0.6614798
     pitch: 0.0
     yaw: 0.0
-  gnss_left:
+  gnss_left_link:
     x: -0.355
     y: 0.374
     z: 0.0065
     roll: 0.0
     pitch: 0.0
     yaw: 0.0
-  gnss_right:
+  gnss_right_link:
     x: -0.015
     y: -0.31
     z: 0.0065
