@@ -36,36 +36,40 @@
             ${calibration['sensor_kit_base_link']['velodyne_top_base_link']['yaw']}"
       />
     </xacro:VLP-16>
-    <xacro:include filename="$(find livox_description)/urdf/livox_horizon.xacro"/>
-    <xacro:livox_horizon_macro
-      name="livox_front_left"
+    <xacro:include filename="$(find velarray_description)/urdf/velarray_horizon.xacro"/>
+    <xacro:velarray_m1600ex_macro
+      name="velarray_front_left"
       parent="sensor_kit_base_link"
-      x="${calibration['sensor_kit_base_link']['livox_front_left_base_link']['x']}"
-      y="${calibration['sensor_kit_base_link']['livox_front_left_base_link']['y']}"
-      z="${calibration['sensor_kit_base_link']['livox_front_left_base_link']['z']}"
-      roll="${calibration['sensor_kit_base_link']['livox_front_left_base_link']['roll']}"
-      pitch="${calibration['sensor_kit_base_link']['livox_front_left_base_link']['pitch']}"
-      yaw="${calibration['sensor_kit_base_link']['livox_front_left_base_link']['yaw']}"
+      x="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['x']}"
+      y="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['y']}"
+      z="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['z']}"
+      roll="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['roll']}"
+      pitch="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['pitch']}"
+      yaw="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['yaw']}"
     />
-    <xacro:livox_horizon_macro
-      name="livox_front_center"
+    <xacro:velarray_m1600ex_macro
+      name="velarray_front_right"
       parent="sensor_kit_base_link"
-      x="${calibration['sensor_kit_base_link']['livox_front_center_base_link']['x']}"
-      y="${calibration['sensor_kit_base_link']['livox_front_center_base_link']['y']}"
-      z="${calibration['sensor_kit_base_link']['livox_front_center_base_link']['z']}"
-      roll="${calibration['sensor_kit_base_link']['livox_front_center_base_link']['roll']}"
-      pitch="${calibration['sensor_kit_base_link']['livox_front_center_base_link']['pitch']}"
-      yaw="${calibration['sensor_kit_base_link']['livox_front_center_base_link']['yaw']}"
+      x="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['x']}"
+      y="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['y']}"
+      z="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['z']}"
+      roll="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['roll']}"
+      pitch="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['pitch']}"
+      yaw="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['yaw']}"
     />
-    <xacro:livox_horizon_macro
-      name="livox_front_right"
+
+    <xacro:include filename="$(find imu_description)/urdf/imu.xacro"/>
+    <xacro:imu_macro
+      name="tamagawa/imu"
       parent="sensor_kit_base_link"
-      x="${calibration['sensor_kit_base_link']['livox_front_right_base_link']['x']}"
-      y="${calibration['sensor_kit_base_link']['livox_front_right_base_link']['y']}"
-      z="${calibration['sensor_kit_base_link']['livox_front_right_base_link']['z']}"
-      roll="${calibration['sensor_kit_base_link']['livox_front_right_base_link']['roll']}"
-      pitch="${calibration['sensor_kit_base_link']['livox_front_right_base_link']['pitch']}"
-      yaw="${calibration['sensor_kit_base_link']['livox_front_right_base_link']['yaw']}"
+      namespace=""
+      x="${calibration['sensor_kit_base_link']['tamagawa/imu_link']['x']}"
+      y="${calibration['sensor_kit_base_link']['tamagawa/imu_link']['y']}"
+      z="${calibration['sensor_kit_base_link']['tamagawa/imu_link']['z']}"
+      roll="${calibration['sensor_kit_base_link']['tamagawa/imu_link']['roll']}"
+      pitch="${calibration['sensor_kit_base_link']['tamagawa/imu_link']['pitch']}"
+      yaw="${calibration['sensor_kit_base_link']['tamagawa/imu_link']['yaw']}"
+      fps="100"
     />
   </xacro:macro>
 </robot>
