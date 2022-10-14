@@ -36,7 +36,7 @@
             ${calibration['sensor_kit_base_link']['velodyne_top_base_link']['yaw']}"
       />
     </xacro:VLP-16>
-    <xacro:include filename="$(find velarray_description)/urdf/velarray_horizon.xacro"/>
+    <xacro:include filename="$(find velarray_description)/urdf/velarray_m1600ex.xacro"/>
     <xacro:velarray_m1600ex_macro
       name="velarray_front_left"
       parent="sensor_kit_base_link"
