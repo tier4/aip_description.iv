@@ -36,26 +36,17 @@
             ${calibration['sensor_kit_base_link']['velodyne_top_base_link']['yaw']}"
       />
     </xacro:VLP-16>
-    <xacro:include filename="$(find velarray_description)/urdf/velarray_m1600ex.xacro"/>
-    <xacro:velarray_m1600ex_macro
-      name="velarray_front_left"
+
+    <xacro:include filename="$(find pandar_description)/urdf/pandar_xt32.xacro"/>
+    <xacro:Pandar-XT32
+      name="pandar_xt32_front_center"
       parent="sensor_kit_base_link"
-      x="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['x']}"
-      y="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['y']}"
-      z="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['z']}"
-      roll="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['roll']}"
-      pitch="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['pitch']}"
-      yaw="${calibration['sensor_kit_base_link']['velarray_front_left_base_link']['yaw']}"
-    />
-    <xacro:velarray_m1600ex_macro
-      name="velarray_front_right"
-      parent="sensor_kit_base_link"
-      x="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['x']}"
-      y="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['y']}"
-      z="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['z']}"
-      roll="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['roll']}"
-      pitch="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['pitch']}"
-      yaw="${calibration['sensor_kit_base_link']['velarray_front_right_base_link']['yaw']}"
+      x="${calibration['sensor_kit_base_link']['pandar_xt32_front_center_base_link']['x']}"
+      y="${calibration['sensor_kit_base_link']['pandar_xt32_front_center_base_link']['y']}"
+      z="${calibration['sensor_kit_base_link']['pandar_xt32_front_center_base_link']['z']}"
+      roll="${calibration['sensor_kit_base_link']['pandar_xt32_front_center_base_link']['roll']}"
+      pitch="${calibration['sensor_kit_base_link']['pandar_xt32_front_center_base_link']['pitch']}"
+      yaw="${calibration['sensor_kit_base_link']['pandar_xt32_front_center_base_link']['yaw']}"
     />
 
     <xacro:include filename="$(find imu_description)/urdf/imu.xacro"/>
